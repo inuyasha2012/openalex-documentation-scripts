@@ -87,9 +87,9 @@ CREATE TABLE openalex.topics (
     wikipedia_id text,
     works_count integer,
     cited_by_count integer,
-    updated_date timestamp without time zone
+    updated_date timestamp without time zone,
+    siblings jsonb  -- 新增字段，存储同级主题 ID 列表
 );
-
 --
 -- Name: concepts; Type: TABLE; Schema: openalex; Owner: -
 --
